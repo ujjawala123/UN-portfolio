@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+   
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+    <style>
+        .circle {
+            height: 80px;
+            width: 80px;
+            background-color: #8fcaca;
+            border-radius: 50%;
+            
+          }
+          .cir {
+            height: 20px;
+            width: 20px;
+            background-color: #a9c9c9;
+            border-radius: 50%;
+            
+          }
+          .c{
+            height: 150px;
+            width: 150px;
+            background-color: #53bbbe;
+            border-radius: 50%;
+            
+          }
+          .circle1 {
+            height: 40px;
+            width: 40px;
+            background-color: #8fcaca;
+            border-radius: 50%;
+            
+          }
+          .cir2 {
+            height: 100px;
+            width: 100px;
+            background-color: #5bc2c2;
+            border-radius: 50%;
+            
+          }
+          .c2 {
+            height: 150px;
+            width: 150px;
+            background-color: #6e9696;
+            border-radius: 50%;
+            
+          }
+        #me span{
+            color: rgb(65, 201, 201);
+        }
+        #name  {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            margin-bottom: 10px;
+        }
+        #col img{
+            width: 100px;
+            margin: 100px ;
+            margin-top: 30px;
+            margin-bottom: 0%;
+            cursor: pointer;
+
+        }
+        #about .about {
+            flex-direction: column-reverse;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;   
+             
+        }
+        #about .col-left {
+            width: 250px;
+            height: 360px;
+        }
+        #about .col-right {
+            width: 100%;
+        }
+        #about .col-right h2 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            margin-bottom: 10px;
+        }
+        #about .col-right p {
+            margin-bottom: 10px;
+        }
+        #about .col-right .cta {
+            color: rgb(35, 121, 113);
+            margin-bottom: 0px;
+            padding: 10px 20px;
+            font-size: 2rem;
+        }
+        #about .col-left .about-img {
+            height: 98%;
+            width: 100%;
+            position: relative;
+            border: 8px solid white;
+            margin-left: 700px;
+            margin-top:40px;
+
+        }
+        #about .col-left .about-img::after {
+            content: '';
+            position: absolute;
+            left: -33px;
+            top: 45px;
+            height: 94%;
+            width: 110%;
+            border: 9px solid rgb(34, 146, 146);
+            z-index: -1;
+        }
+        #social-icons {
+            text-align: center;
+            padding: 20px 0;
+        }
+        #social-icons img {
+            width: 50px;
+            margin: 0px 10px;
+            margin-left: 0px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+ <body  style="background-color:white"> 
+
+<div style=" height:200%; position:relative; width:100%;">
+
+    <div class="section " style=" align-items:center; background-color: rgb(10, 177, 177);  display: sticky; margin:0px; margin-right: 10px; margin-top: 0px;  position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0; text-align:left;  text-decoration:color white;   padding-top: 20px; width:100%; height:80px ">
+        
+        <button type="button"  onclick="window.location.href='index.html';"  style=" background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255);border-radius: 18px;  margin-top: 0px;  margin-left: 10px; position:absolute ; left: 100px; padding:7px; width:90px;"> Home</button>
+        <button type="button"  onclick="window.location.href='about.html';"  style=" background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255);border-radius: 18px; margin-top: 0px;  margin-left: 110px; position:absolute ; left: 100px; padding:7px; width:90px;"> About</button>
+
+        <input style=" background-color: rgb(251, 255, 255); border-color: aqua; border-radius: 7px; margin-top: 1px;  margin-left: 650px;  padding:6px;  text-decoration-color:rgb(230, 218, 218) ; width:400px;" type="text" placeholder="Search"> </input>
+        <button type="button"  onclick="window.location.href='contact.html';"   style=" background-color: rgb(255, 255, 255);border-color: aqua; border-radius: 7px; margin-top: 0px;  margin-left: 1090px; position:absolute ; left: 100px; padding:6px; width:70px;"> Contact</button>
+        <button type="button"  onclick="window.location.href = 'index.html';" style=" background-color:rgb(255, 255, 255); border-color: aqua;border-radius: 7px; margin-top: 0px; position:absolute; right: 130px;  padding:6px;width:70px;"> Search</button>
+       
+    </div>
+
+    <section id="about" >
+        <div class="about container">
+        
+        <h1 class="w3-third" id="me" style="margin-top: 120px; margin-left: 100px ; font-size: 50px; "><div class="circle" ><br><div class="cir"style="margin-left: 100px; " ></div><div class="c" style="margin-left: 180px; " ></div></div><span class="w3-hide-small" style="text-color: rgb(19, 116, 99);">H</span>ello! <br><span>I </span>am<span> U</span>jjawala <span>N</span>imbolkar.</h1>
+          <div class="col-left">
+            <div class="about-img">
+                
+              <img src="images/my photo.jpg"alt="img">
+              
+            </div>
+          </div>
+          <br>
+          <hr>
+          <div class="col-right" style="margin-top: 70px;">
+            <h1 class="section-title">About <span>me</span></h1>
+            <h2>Web Developer</h2>
+            <br>
+            <p> I am a Web developer with a passion for creating delightful digital experiences. Ever since I wrote my first line of HTML, I've been captivated by the power of the web to connect people and ideas.I'm excited about the opportunity to collaborate on meaningful projects and contribute to building a better web. Whether you're looking to bring your ideas to life or enhance your existing web presence, I'd love to chat and see how we can work together.</p><br>
+            
+             <br>
+            <a  href="resume.pdf" type="button" class="cta" >Download Resume</a><div class="circle" ><br><div class="cir"style="margin-left: 100px; " ></div>
+          </div>
+        </div>
+    </section>
+    <hr>
+
+    <div class="w3-row w3-container" style=" margin-top: -10px; margin-bottom: 50px;  margin: 0 auto;">
+        <div class="w3-center w3-padding-64" >
+          <span class="w3-xlarge w3-bottombar w3-border-teal w3-padding-16">My Projects</span>
+        </div>
+        <div class="w3-col l3 m6 w3-light-teal w3-container w3-padding-16">
+          <h3>My Portfolio</h3>
+          <p>Designed using Html,Css,Javascript with my whole resume information shown in this Portfolio.</p>
+          <a href="https://github.com/ujjawala123/Ujjawala-portfolio-web">Project Link</a>
+        </div>
+    
+        <div class="w3-col l3 m6 w3-teal w3-container w3-padding-16">
+           <h3>Ecommerace Website</h3>
+          <p>This website is designed using laravel,javascript,bootstrap which is for clothes marketting for kids,men & women's. </p>
+          <a href="https://github.com/ujjawala123/Laravel-project">Project Link</a>
+        </div>
+    
+        <div class="w3-col l3 m6 w3-dark aqua w3-container w3-padding-16">
+          <h3>Discussion forum</h3>
+          <p>This is discussion forum website designed using Php,Html,Css,Javascript which is used to get question ans related various technologies.</p>
+          <a href="https://github.com/ujjawala123/php-work">Project Link</a>
+        </div>
+    
+        <div class="w3-col l3 m6 w3-teal w3-container w3-padding-16">
+          <h3>Digital Marketting Web</h3>
+          <p>This website is designed using html,css,javascript and it include various pages like about us,contact,home etc.</p>
+          <a href="https://github.com/ujjawala123/Digital-marketing-website">Project Link</a>
+        </div>
+      </div>
+      <br>
+    <hr>
+    
+
+    <div class="name">
+       
+          
+        <h2 style="text-align: center;margin-top:30px">Technical Skills</h2>
+    <br>
+    </div>
+
+    <div class="row" id="row"style="background-color: rgb(252, 253, 253);display: flex; margin:10px;  margin-top: 10px; width: 100%;  height: 300px;  ">
+        <div class="col-md-3" id="col"style=" background-color: rgb(209, 252, 244);border-color: rgb(54, 56, 54); border-radius: 10px; width: 300px; ">
+            <img src="images/py.png" alt="">
+            <p style="text-align:center;margin-top: 0px;margin: 20%;">Python is a high-level, general-purpose programming language.</p>
+            
+        </div>
+        
+        <div class="col-md-3" id="col"style="background-color: rgb(209, 252, 244);  border-radius: 10px; border-color: rgb(105, 101, 101);  margin-left: 30px; width: 300px; ">
+            <img src="images/js.png" alt="">
+            <p style="text-align:center;margin-top: 0px;margin: 20%;">JavaScript is a scripting language used to develop web pages</p>
+           
+            <!-- <input style=" border-radius: 10px; margin: 20%;  margin-top: 10px;"> </input> -->
+        </div>
+
+        <div class="col-md-3" id="col"style="background-color:rgb(209, 252, 244);  border-radius: 10px; border-color: rgb(126, 107, 107);  margin-left: 30px; width: 300px; ">
+            <img src="images/h.png" alt="">
+            <p style="text-align:center;margin-top:0px;margin: 20%;">HTML is the standard markup language for Web pages. I learnt HTML from Coursera.</p>
+           
+        </div>
+        <div class="col-md-3" id="col" style="background-color: rgb(209, 252, 244);  border-radius: 10px; border-color: rgb(116, 103, 103);  margin-left: 30px; width: 300px; ">
+            <img src="images/cs.jpeg" alt="">
+            <p style="text-align:center;margin-top: 0px;margin: 20%;"> CSS is the language we use to style an HTML document .</p>
+           
+            
+        </div>
+        
+        <br>
+        
+    </div>
+    <br>
+    <br>
+    <hr>
+    <footer class="w3-container w3-padding-32 w3-white " style="margin-top:40px">  
+      
+        <div class="w3-row-padding">
+          <div class="w3-third">
+            <h3>Activites</h3>
+            <p>Hackathon and Bootcamps attended at patech- e- learning , Accojob,Next-wave Certification in various technologies from various courses at Infosys , Coursera,udemy.</p>   
+            <button class="w3-button w3-teal w3-padding-large w3-section">
+                <a href="https://drive.google.com/drive/folders/1Thnm4ucTSFp2-49YjRlELDXuqQNS_VjS?usp=drive_link">Certifications</a>
+
+            </button>   
+          </div>
+        
+          <div class="w3-third">
+            <h3>Publications</h3>
+            <span class="w3-large">SWOT System</span><br>
+                <p>Soil and water analysis system using IOT based sensors and AI-ML techniques. Which will find correct
+                    proportion of supplements needed for healthy plant growth in drought regions. </p>
+                <a href="https://docs.google.com/document/d/1_fJx4KoJBV0pVUJKbX1oxpL_lcQjikSH/edit?usp=drive_link&ouid=112108443346061530870&rtpof=true&sd=true">Project Link</a>
+           
+              
+            
+          </div>
+    
+          <div class="w3-third">
+            <h3>Technologies</h3>
+            <p>
+              <span class="w3-tag w3-teal w3-margin-bottom">Html</span> <span class="w3-tag w3-white w3-small w3-margin-bottom">Css</span> <span class="w3-tag w3-teal w3-small w3-margin-bottom">Python</span>
+              <span class="w3-tag w3-white w3-small w3-margin-bottom">Java</span> <span class="w3-tag w3-teal w3-small w3-margin-bottom">Bootstrap</span> <span class="w3-tag w3-white w3-small w3-margin-bottom">SQL</span>
+              <span class="w3-tag w3-teal w3-small w3-margin-bottom">Laravel</span> <span class="w3-tag w3-white w3-small w3-margin-bottom">Php</span> <span class="w3-tag w3-teal w3-small w3-margin-bottom">Javascript</span><div class="circle1"style="margin-left: 180px;"  ><div class="cir2" style="margin-left: 90px; " ></div>
+            </p>
+          </div>
+        </div>
+      </footer>
+      
+      <hr>
+   
+    <div id="social-icons" style="background-color: rgb(255, 255, 255); margin-bottom:20px; margin-top: 50px;  text-align:center;   padding-top: 20px; width: 100%; height:70px ">
+      
+      <p>Copyright@ filed by Ujjawla Nimbolkar || 2023-24</p>
+        <a href="https://www.linkedin.com/in/ujjawala-nimbolkar-726997205"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://wa.me/9511779452"><img src="images/ww.png" alt="Facebook"></a>
+        <a href="https://instagram.com/ujjawalanimbolkar?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><img src="images/instagram.png" alt="Instagram"></a>
+        <div class="c1" style="margin-left: 900px;"></div>
+    </div>
+    
+    
+</div>
+
+
+</body>
+</html>
+<!-- rgb(168, 236, 227); --

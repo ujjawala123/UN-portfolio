@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+    .circle {
+            height: 80px;
+            width: 80px;
+            background-color: #8fcaca;
+            border-radius: 50%;
+            
+          }
+    .cir {
+            height: 20px;
+            width: 20px;
+            background-color: #a9c9c9;
+            border-radius: 50%;
+            
+        }
+    .c{
+            height: 150px;
+            width: 150px;
+            background-color: #53bbbe;
+            border-radius: 50%;
+        }           
+    #me span{
+            color: rgb(65, 201, 201);
+    }
+    #name  {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            margin-bottom: 10px;
+    }
+    #col img{
+        width: 100px;
+        margin: 100px ;
+        margin-top: 30px;
+        margin-bottom: 0%;
+        cursor: pointer;
+
+    }
+    #about .about {
+        flex-direction: column-reverse;
+        text-align: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 100px 20px;      
+    }
+    #about .col-left {
+        width: 250px;
+        height: 360px;
+    }
+    #about .col-right {
+        width: 100%;
+    }
+    #about .col-right h2 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        letter-spacing: 0.2rem;
+        margin-bottom: 10px;
+    }
+    #about .col-right p {
+        margin-bottom: 10px;
+    }
+    #about .col-right .cta {
+        color: rgb(35, 121, 113);
+        margin-bottom: 50px;
+        padding: 10px 20px;
+        font-size: 2rem;
+    }
+    #about .col-left .about-img {
+        height: 98%;
+        width: 100%;
+        position: relative;
+        border: 8px solid white;
+        margin-left: 700px;
+        margin-top:40px;
+
+    }
+    #about .col-left .about-img::after {
+        content: '';
+        position: absolute;
+        left: -33px;
+        top: 45px;
+        height: 94%;
+        width: 110%;
+        border: 9px solid rgb(34, 146, 146);
+        z-index: -1;
+    }
+    #social-icons {
+        text-align: center;
+        padding: 20px 0;
+    }
+    #social-icons img {
+        width: 50px;
+        margin: 0px 10px;
+        margin-left: 0px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body  style="background-color:white"> 
+
+<div style=" height:200%; position:relative; width:100%;">
+
+    <div class="section" style=" align-items:center; background-color:  rgb(10, 177, 177);  display: sticky; margin:0px; margin-right: 10px; margin-top: 1px;  position:fixed; text:margin left 30px; text:margin; top:10px; padding-top: 20px; width:100%; height:80px ">
+        <button type="button"  onclick="window.location.href='index.html';"  style=" background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255);border-radius: 18px; margin-top: 0px;  margin-left: 10px; position:absolute ; left: 100px; padding:7px; width:90px;"> Home</button>
+        <button type="button"  onclick="window.location.href='about.html';"  style=" background-color: rgb(255, 255, 255); border-color: rgb(255, 255, 255);border-radius: 18px; margin-top: 0px;  margin-left: 110px; position:absolute ; left: 100px; padding:7px; width:90px;"> About</button>
+
+        <input style=" background-color: rgb(255, 255, 255);border-color: aqua; border-radius: 7px; margin-top: 1px;  margin-left: 650px;  padding:6px;  text-decoration-color:rgb(230, 218, 218) ; width:400px;" type="text"  placeholder="Search"> </input>
+        <button type="button"  onclick="window.location.href='contact.html';"  style=" background-color: rgb(255, 255, 255); border-color: aqua;border-radius: 7px; margin-top: 0px;  margin-left: 1090px; position:absolute ; left: 100px; padding:6px; width:70px;"> Contact</button>
+        <button type="button"  onclick="window.location.href='index.html';" style=" background-color:rgb(255, 255, 255); border-color: aqua;border-radius: 7px; margin-top: 0px; position:absolute; right: 130px;  padding:6px;width:70px;"> Search</button>
+        
+    </div>
+    
+
+    <div>
+        <div class="main">
+
+        <br>
+        <br>
+        <br>
+        <br>
+            <h2 style="text-align: center;">PORTFOLIO</h2>
+            <p style="text-align: center;">My work in website designed and developement.</p>
+            <hr>
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+              <div class="column">
+                <div class="content">
+                  <img src="images/p1.png" alt="Mountains" style="width:100%">
+                  <h3>My Work</h3>
+                  <p>Designed using Html,Css,Javascript with my whole resume information shown in this Portfolio.</p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <img src="images/p3.png" alt="Lights" style="width:100%">
+                  <h3>My Work</h3>
+                  <p>This website is designed using Html, Css,Php,javascript,bootstrap which is for Hote management company premieredtech.</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="row">
+               <div class="column">
+                    <div class="content">
+                      <img src="images/p2 .png" alt="Nature" style="width:100%">
+                      <h3>My Work</h3>
+                      <p>Designed using Html,Css,Javascript with my whole resume information shown in this Portfolio.</p>
+                    </div>
+              </div>
+              <div class="column">
+                <div class="content">
+                  <img src="images/p4.png" alt="Mountains" style="width:100%">
+                  <h3>My Work</h3>
+                  <p>This website is designed using laravel,javascript,bootstrap which is for food ordering.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <div class="content">
+                    <img src="images/p6.png" alt="Mountains" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>This website is designed using laravel,javascript,bootstrap which is for food ordering.</p>
+                    </div>
+                </div>
+               
+                <div class="column">
+                    <div class="content">
+                    <img src="images/p7.png" alt="Mountains" style="width:100%">
+                    <h3>My Work</h3>
+                    <p>This website is designed using Html,Css, javascript,bootstrap which is for  marketting for kids,men & women's.</p>
+                    </div>
+                </div>
+            </div>
+                
+                <div class="content">
+                <img src="images/p5.png" alt="Bear" style="width:100%">
+                <h3>Some Other Work</h3>
+                <p>This website is designed using laravel,javascript,bootstrap which is for clothes marketting for kids,men & women's..</p>
+                </div>
+            </div>
+            
+            <!-- END MAIN -->
+            </div>
+      
+    </div>
+  <!-- End Contact Section -->
+  <div id="social-icons" style="background-color: rgb(255, 255, 255); margin-top: 50px;  text-align:center;  bottom:10px; padding-top: 20px; width: 100%; height:70px ">
+    <p>Copyright@ filed by Ujjawla Nimbolkar || 2023-24</p>
+    <a href="https://www.linkedin.com/in/ujjawala-nimbolkar-726997205"><img src="images/linkedin.png" alt="LinkedIn"></a>
+    <a href="https://wa.me/9511779452"><img src="images/ww.png" alt="Facebook"></a>
+    <a href="https://instagram.com/ujjawalanimbolkar?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><img src="images/instagram.png" alt="Instagram"></a>
+
+</div>
+</div>
+</body>
+</html>
